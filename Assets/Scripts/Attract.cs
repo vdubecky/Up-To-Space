@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Attract : MonoBehaviour
 {
-    public float rychlost;
+    [SerializeField]
+    private float rychlost;
 
     void Update()
     {
