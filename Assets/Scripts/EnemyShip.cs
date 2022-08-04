@@ -3,27 +3,39 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class EnemyShip : MonoBehaviour
-{
-    public int zivoty;
-    public float rychlost;
+{   
+    [SerializeField]
+    private int zivoty;
+    [SerializeField]
+    private float rychlost;
     private float kousek;
 
-    public GameObject celyObjekt;
-    public Animator animator;
-    public GameObject particle;
-    public GameObject particleVlna;
-    public GameObject projektil;
-    public GameObject zasah;
-    public GameObject bar;
+    [SerializeField]
+    private GameObject celyObjekt;
+    [SerializeField]
+    private Animator animator;
+    [SerializeField]
+    private GameObject particle;
+    [SerializeField]
+    private GameObject particleVlna;
+    [SerializeField]
+    private GameObject projektil;
+    [SerializeField]
+    private GameObject zasah;
+    [SerializeField]
+    private GameObject bar;
 
-    public Image healthBar;
+    [SerializeField]
+    private Image healthBar;
+    
+    [SerializeField]
+    private Sprite[] vzhled;
+    [SerializeField]
+    private GameObject star;
+    [SerializeField]
+    private Image paprsek;
+    
     private float velikost = 0;
-
-    public Sprite[] vzhled;
-
-    public GameObject star;
-
-    public Image paprsek;
     private Vector3 cil;
 
     public bool Papr { get; set; }
